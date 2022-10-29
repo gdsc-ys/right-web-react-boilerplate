@@ -2,10 +2,10 @@ import './App.css';
 
 import React from 'react';
 
-import Header from './common/Header';
-import Wrapper from './common/Wrapper';
-import NavWrapper from './common/NavWrapper';
-import PageWrapper from './common/PageWrapper';
+import Header from './components/common/Header';
+import Wrapper from './components/common/Wrapper';
+import NavWrapper from './components/common/NavWrapper';
+import PageWrapper from './components/common/PageWrapper';
 
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 
