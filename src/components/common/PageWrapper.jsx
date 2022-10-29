@@ -10,6 +10,7 @@ export default PageWrapper;
 
 export const Space = styled.main`
   width: 70%;
+  min-width: 400px;
   height: calc(100vh - 50px);
 
   padding: 10px;
