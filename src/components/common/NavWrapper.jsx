@@ -1,11 +1,17 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import colors from '../../styles/colors';
 import { mobileSize } from '../../styles/size';
 
-function NavWrapper(props) {
-  return <Space>{props.children}</Space>;
+function NavWrapper({ children }) {
+  return <Space>{children}</Space>;
 }
+
+NavWrapper.propTypes = {
+  children: PropTypes.node.isRequired,
+};
+
 export default NavWrapper;
 
 export const Space = styled.nav`

@@ -1,7 +1,6 @@
 import React from 'react';
-import styled from 'styled-components';
 
-function StudentPage(props) {
+function StudentPage() {
   return <div>멤버들 소개</div>;
 }
 export default StudentPage;

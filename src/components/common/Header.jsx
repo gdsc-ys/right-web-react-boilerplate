@@ -1,8 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
 
-function Header(props) {
-  return <Space></Space>;
+function Header() {
+  return <Space />;
 }
 export default Header;
 

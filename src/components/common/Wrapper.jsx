@@ -1,11 +1,17 @@
 import React from 'react';
 import styled from 'styled-components';
+import PropTypes from 'prop-types';
 import colors from '../../styles/colors';
 import { mobileSize } from '../../styles/size';
 
-function Wrapper(props) {
-  return <ContainerSpace>{props.children}</ContainerSpace>;
+function Wrapper({ children }) {
+  return <ContainerSpace>{children}</ContainerSpace>;
 }
+
+Wrapper.propTypes = {
+  children: PropTypes.node.isRequired,
+};
+
 export default Wrapper;
 
 export const ContainerSpace = styled.div`

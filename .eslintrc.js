@@ -5,4 +5,7 @@ module.exports = {
     node: true,
   },
   extends: ['airbnb'],
+  rules: {
+    'object-curly-newline': 'off',
+  },
 };

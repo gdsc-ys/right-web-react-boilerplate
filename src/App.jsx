@@ -7,15 +7,13 @@ import Wrapper from './components/common/Wrapper';
 import NavWrapper from './components/common/NavWrapper';
 import PageWrapper from './components/common/PageWrapper';
 
-import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
-
 function App() {
   return (
     <>
-      <Header></Header>
+      <Header />
       <Wrapper>
-        <NavWrapper></NavWrapper>
-        <PageWrapper></PageWrapper>
+        <NavWrapper />
+        <PageWrapper />
         {/* <TestPage></TestPage> */}
         {/* <Router>
         <Routes>

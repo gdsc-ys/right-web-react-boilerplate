@@ -1,7 +1,6 @@
 import React from 'react';
-import styled from 'styled-components';
 
-function UserPage(props) {
+function UserPage() {
   return <div>설정</div>;
 }
 export default UserPage;

@@ -1,10 +1,16 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import colors from '../../styles/colors';
 
-function Container(props) {
-  return <ContainerSpace>{props.children}</ContainerSpace>;
+function Container({ children }) {
+  return <ContainerSpace>{children}</ContainerSpace>;
 }
+
+Container.propTypes = {
+  children: PropTypes.node.isRequired,
+};
+
 export default Container;
 
 export const ContainerSpace = styled.div`
