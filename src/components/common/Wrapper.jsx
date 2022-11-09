@@ -14,12 +14,12 @@ export const ContainerSpace = styled.div`
   margin: 30px;
   box-sizing: border-box;
 
-  over-flow: hidden;
+  overflow: hidden;
 
   background-color: ${colors.LIGHT};
 
   display: flex;
-  flex-flow: row no-wrap;
+  flex-flow: row nowrap;
 
   @media screen and (max-width: ${mobileSize}px) {
     flex-flow: column wrap;
