@@ -7,6 +7,7 @@ const Span = (props) => {
 export default Span;
 
 const Wrapper = styled.span`
+  display: inline;
   font-size: ${(props) => props.size || '24px'};
   line-height: 100%;
   text-align: center;
