@@ -1,11 +1,11 @@
 import React from 'react';
 import styled from 'styled-components';
-import { mobileSize } from '../../styles/size';
-import H1 from './letters/H1';
-import H2 from './letters/H2';
-import H3 from './letters/H3';
-import H4 from './letters/H4';
-import Span from './letters/Span';
+import { mobileSize } from '../../../styles/size';
+import H1 from '../letters/H1';
+import H2 from '../letters/H2';
+import H3 from '../letters/H3';
+import H4 from '../letters/H4';
+import Span from '../letters/Span';
 
 function PageWrapper() {
   return (

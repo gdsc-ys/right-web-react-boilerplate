@@ -1,8 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import colors from '../../styles/colors';
-import { mobileSize } from '../../styles/size';
+import colors from '../../../styles/colors';
+import { mobileSize } from '../../../styles/size';
 
 function NavWrapper({ children }) {
   return <Space>{children}</Space>;
