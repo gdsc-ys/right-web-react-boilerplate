@@ -1,22 +1,22 @@
-import React from 'react'
-import styled from 'styled-components'
-import colors from '../../styles/colors'
+import React from 'react';
+import styled from 'styled-components';
+import colors from '../../../styles/colors';
 
-const InputCheck = () => {
-    return (
-        <InputArea>
-            <LabelText>{}</LabelText>
-            <InputBox />
-            <WarningText>{}</WarningText>
-        </InputArea>
-    )
+function InputCheck() {
+  return (
+    <InputArea>
+      <LabelText>{ }</LabelText>
+      <InputBox />
+      <WarningText>{ }</WarningText>
+    </InputArea>
+  );
 }
 
 const InputArea = styled.div`
   display: flex;
   flex-direction: column;
   margin: 10px;
-`; 
+`;
 
 const LabelText = styled.div`
   font-family: 'Epilogue';
@@ -24,7 +24,7 @@ const LabelText = styled.div`
   font-weight: 900;
   color: ${colors.BLACK};
   margin: 0 0 10px 0;
-`; 
+`;
 
 const InputBox = styled.input`
   width: 440px;
@@ -34,7 +34,7 @@ const InputBox = styled.input`
   color: ${colors.BLACK};
   margin: 0 0 10px 0;
 
-`; 
+`;
 
 const WarningText = styled.div`
   font-family: 'Epilogue';
@@ -42,6 +42,6 @@ const WarningText = styled.div`
   color: ${colors.RED};
   font-size: 20px;
   margin-bottom: 20px;
-`; 
+`;
 
-export default InputCheck
+export default InputCheck;
