@@ -1,35 +1,39 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import { mobileSize } from '../../../styles/size';
-import H1 from '../letters/H1';
-import H2 from '../letters/H2';
-import H3 from '../letters/H3';
-import H4 from '../letters/H4';
-import Span from '../letters/Span';
 
-function PageWrapper() {
+import Header from '../Header';
+
+function PageWrapper({ children }) {
   return (
     <Space>
-      <H1>H1 Test</H1>
-      <H2>H2 Test</H2>
-      <H3>H3 Test</H3>
-      <H4>H4 Test</H4>
-      <Span>Span Test</Span>
+      <Header />
+      <Page>{children}</Page>
     </Space>
   );
 }
+
+PageWrapper.propTypes = {
+  children: PropTypes.node.isRequired,
+};
+
 export default PageWrapper;
 
-export const Space = styled.main`
-  width: 70%;
-  min-width: 400px;
-  height: calc(100vh - 50px);
+const Space = styled.main`
+  width: calc(100vw - 300px);
+  height: calc(100% - 30px);
 
-  padding: 10px;
-  gap: 10px;
+  box-sizing: border-box;
 
   @media screen and (max-width: ${mobileSize}px) {
-    width: calc(100% - 40px);
-    // max-width: 400px;
+    width: 100%;
   }
+`;
+
+const Page = styled.main`
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  box-sizing: border-box;
 `;

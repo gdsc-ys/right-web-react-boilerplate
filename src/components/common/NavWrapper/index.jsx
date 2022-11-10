@@ -15,19 +15,17 @@ NavWrapper.propTypes = {
 export default NavWrapper;
 
 export const Space = styled.nav`
-  width: 30%;
-  min-width: 400px;
-
-  height: calc(100vh - 50px);
-
-  padding: 10px;
-  gap: 10px;
+  width: 300px;
+  height: 100%;
 
   background-color: ${colors.DARK};
 
   @media screen and (max-width: ${mobileSize}px) {
-    width: calc(100% - 40px);
-    min-width: 0;
-    // max-width: 400px;
+    width: 80%;
+    max-width: 300px;
+    position: fixed;
+    opacity: 80%;
+
+    box-sizing: border-box;
   }
 `;
